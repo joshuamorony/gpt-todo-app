@@ -1,0 +1,49 @@
+form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+form input {
+  flex-grow: 1;
+  padding: 5px 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+ul li.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+ul li button {
+  margin-left: auto;
+  padding: 5px 10px;
+  font-size: 14px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
