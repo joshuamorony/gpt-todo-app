@@ -1,9 +1,12 @@
 <form (ngSubmit)="addTodo(newTodo)">
   <input
     type="text"
-    name="newTodo"
     placeholder="Enter a new todo item"
     [(ngModel)]="newTodo"
+    name="newTodo"
   />
   <button type="submit">Add</button>
 </form>
+<ul>
+  <li *ngFor="let todo of todos">{{ todo }}</li>
+</ul>
