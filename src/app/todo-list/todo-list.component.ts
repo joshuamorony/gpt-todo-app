@@ -7,9 +7,9 @@ import { Component } from '@angular/core';
 })
 export class TodoListComponent {
   newTodo = '';
-  todos: string[] = [];
+  todos: { todo: string; completed: boolean }[] = [];
 
   addTodo(todo: string) {
-    this.todos.push(todo);
+    this.todos.push({ todo: todo, completed: false });
   }
 }

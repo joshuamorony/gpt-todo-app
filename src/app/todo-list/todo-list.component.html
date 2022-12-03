@@ -8,5 +8,8 @@
   <button type="submit">Add</button>
 </form>
 <ul>
-  <li *ngFor="let todo of todos">{{ todo }}</li>
+  <li *ngFor="let todo of todos">
+    <input type="checkbox" [(ngModel)]="todo.completed" />
+    {{ todo.todo }}
+  </li>
 </ul>
